@@ -1,12 +1,13 @@
 package com.wherezip.model;
 
+import com.wherezip.model.type.ButtonType;
 import lombok.Builder;
 import lombok.Getter;
 
 @Getter
-public class Button {
+public class AlimtalkButton {
 
-    private String type;
+    private ButtonType type;
     private String name;
     private String linkMobile;
     private String linkPc;
@@ -14,7 +15,7 @@ public class Button {
     private String schemeAndroid;
 
     @Builder
-    public Button(String type, String name, String linkMobile, String linkPc, String schemeIos, String schemeAndroid) {
+    public AlimtalkButton(ButtonType type, String name, String linkMobile, String linkPc, String schemeIos, String schemeAndroid) {
         this.type = type;
         this.name = name;
         this.linkMobile = linkMobile;

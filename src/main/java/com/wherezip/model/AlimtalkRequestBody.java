@@ -6,20 +6,20 @@ import lombok.Getter;
 import java.util.List;
 
 @Getter
-public class Alimtalk {
+public class AlimtalkRequestBody {
 
     private String plusFriendId;
     private String templateCode;
-    private List<Message> messages;
+    private List<AlimtalkRequestMessage> alimtalkRequestMessages;
     private String reserveTime;
     private String reserveTimeZone;
     private String scheduleCode;
 
     @Builder
-    public Alimtalk(String plusFriendId, String templateCode, List<Message> messages, String reserveTime, String reserveTimeZone, String scheduleCode) {
+    public AlimtalkRequestBody(String plusFriendId, String templateCode, List<AlimtalkRequestMessage> alimtalkRequestMessages, String reserveTime, String reserveTimeZone, String scheduleCode) {
         this.plusFriendId = plusFriendId;
         this.templateCode = templateCode;
-        this.messages = messages;
+        this.alimtalkRequestMessages = alimtalkRequestMessages;
         this.reserveTime = reserveTime;
         this.reserveTimeZone = reserveTimeZone;
         this.scheduleCode = scheduleCode;

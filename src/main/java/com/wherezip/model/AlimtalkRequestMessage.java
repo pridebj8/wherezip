@@ -6,19 +6,19 @@ import lombok.Getter;
 import java.util.List;
 
 @Getter
-public class Message {
+public class AlimtalkRequestMessage {
 
     private String countryCode;
     private String to;
     private String content;
-    private List<Button> buttons;
+    private List<AlimtalkButton> alimtalkButtons;
 
     @Builder
-    public Message(String countryCode, String to, String content, List<Button> buttons){
+    public AlimtalkRequestMessage(String countryCode, String to, String content, List<AlimtalkButton> alimtalkButtons){
         this.countryCode = countryCode;
         this.to = to;
         this.content = content;
-        this.buttons = buttons;
+        this.alimtalkButtons = alimtalkButtons;
     }
 
 }
