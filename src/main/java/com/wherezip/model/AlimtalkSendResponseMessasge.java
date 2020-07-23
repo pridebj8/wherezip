@@ -4,7 +4,7 @@ import lombok.Builder;
 import lombok.Getter;
 
 @Getter
-public class AlimtalkResponseMessasge {
+public class AlimtalkSendResponseMessasge {
 
     private String messageId;
     private String countryCode;
@@ -15,7 +15,13 @@ public class AlimtalkResponseMessasge {
     private String requestStatusDesc;
 
     @Builder
-    AlimtalkResponseMessasge(String messageId, String countryCode, String to, String content, String requestStatusCode, String requestStatusname, String requestStatusDesc){
+    AlimtalkSendResponseMessasge(String messageId,
+                                 String countryCode,
+                                 String to,
+                                 String content,
+                                 String requestStatusCode,
+                                 String requestStatusname,
+                                 String requestStatusDesc){
         this.messageId = messageId;
         this.countryCode = countryCode;
         this.to = to;

@@ -6,7 +6,7 @@ import lombok.Getter;
 import java.util.List;
 
 @Getter
-public class AlimtalkRequestMessage {
+public class AlimtalkSendRequestMessage {
 
     private String countryCode;
     private String to;
@@ -14,7 +14,10 @@ public class AlimtalkRequestMessage {
     private List<AlimtalkButton> alimtalkButtons;
 
     @Builder
-    public AlimtalkRequestMessage(String countryCode, String to, String content, List<AlimtalkButton> alimtalkButtons){
+    public AlimtalkSendRequestMessage(String countryCode,
+                                      String to,
+                                      String content,
+                                      List<AlimtalkButton> alimtalkButtons){
         this.countryCode = countryCode;
         this.to = to;
         this.content = content;

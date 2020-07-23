@@ -15,7 +15,12 @@ public class AlimtalkButton {
     private String schemeAndroid;
 
     @Builder
-    public AlimtalkButton(ButtonType type, String name, String linkMobile, String linkPc, String schemeIos, String schemeAndroid) {
+    public AlimtalkButton(ButtonType type,
+                          String name,
+                          String linkMobile,
+                          String linkPc,
+                          String schemeIos,
+                          String schemeAndroid) {
         this.type = type;
         this.name = name;
         this.linkMobile = linkMobile;
