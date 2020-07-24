@@ -1,5 +1,6 @@
-package com.wherezip.model;
+package com.wherezip.model.send;
 
+import com.wherezip.model.AlimtalkButton;
 import lombok.Builder;
 import lombok.Getter;
 

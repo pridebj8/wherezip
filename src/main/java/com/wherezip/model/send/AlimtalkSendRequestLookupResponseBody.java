@@ -1,4 +1,4 @@
-package com.wherezip.model.report;
+package com.wherezip.model.send;
 
 import lombok.Builder;
 import lombok.Getter;
