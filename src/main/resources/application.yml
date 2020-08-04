@@ -1,0 +1,7 @@
+server:
+  port: 8080
+wherezip:
+  sens-api-url: "https://sens.apigw.ntruss.com/alimtalk/v2"
+  sens-service-id: "ncp:kkobizmsg:kr:2596229:talkmessage"
+  sens-access-key-id: "98C922D995484AFF1417"
+  sens-secret-key: "B43E81F58319FE6FDF07A2B86D0FFB0BA612EB98"
