@@ -10,7 +10,7 @@ public class AlimtalkSendRequestBody {
 
     private String plusFriendId;
     private String templateCode;
-    private List<AlimtalkSendRequestMessage> alimtalkRequestMessages;
+    private List<AlimtalkSendRequestMessage> alimtalkSendRequestMessages;
     private String reserveTime;
     private String reserveTimeZone;
     private String scheduleCode;
@@ -18,13 +18,13 @@ public class AlimtalkSendRequestBody {
     @Builder
     public AlimtalkSendRequestBody(String plusFriendId,
                                    String templateCode,
-                                   List<AlimtalkSendRequestMessage> alimtalkRequestMessages,
+                                   List<AlimtalkSendRequestMessage> alimtalkSendRequestMessages,
                                    String reserveTime,
                                    String reserveTimeZone,
                                    String scheduleCode) {
         this.plusFriendId = plusFriendId;
         this.templateCode = templateCode;
-        this.alimtalkRequestMessages = alimtalkRequestMessages;
+        this.alimtalkSendRequestMessages = alimtalkSendRequestMessages;
         this.reserveTime = reserveTime;
         this.reserveTimeZone = reserveTimeZone;
         this.scheduleCode = scheduleCode;
