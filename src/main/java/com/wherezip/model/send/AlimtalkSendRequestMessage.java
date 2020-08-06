@@ -3,9 +3,11 @@ package com.wherezip.model.send;
 import com.wherezip.model.AlimtalkButton;
 import lombok.Builder;
 import lombok.Getter;
+import lombok.ToString;
 
 import java.util.List;
 
+@ToString
 @Getter
 public class AlimtalkSendRequestMessage {
 
